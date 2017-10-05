@@ -1,4 +1,4 @@
-package io.github.i49.flatter;
+package io.github.i49.flatter.converter;
 
 final class Letters {
 

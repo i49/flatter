@@ -32,7 +32,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>io.github.i49.flatter.Flatter</mainClass>
+                            <mainClass>io.github.i49.flatter.converter.Converter</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

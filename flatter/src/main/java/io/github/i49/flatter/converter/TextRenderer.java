@@ -1,18 +1,18 @@
-package io.github.i49.flatter;
+package io.github.i49.flatter.converter;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SimpleRenderer implements Renderer {
+public class TextRenderer implements Renderer {
     
     private static final Pattern HALF_CHAR = Pattern.compile("[\\u0020-\\u00ff]");
     
     private final int maxLineLength;
     private final String indent;
     
-    public SimpleRenderer(int maxLineLength, String indent) {
+    public TextRenderer(int maxLineLength, String indent) {
         this.maxLineLength = maxLineLength;
         this.indent = indent;
     }
