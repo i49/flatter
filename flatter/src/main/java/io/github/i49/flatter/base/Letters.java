@@ -1,6 +1,6 @@
-package io.github.i49.flatter.converter;
+package io.github.i49.flatter.base;
 
-final class Letters {
+public final class Letters {
 
     public static boolean isPunctuation(char c) {
         return c == '\u3001' || c == '\u3002';

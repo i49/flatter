@@ -8,6 +8,8 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.logging.Logger;
 
+import io.github.i49.flatter.models.Document;
+
 public class Converter {
     
     private static final Logger log = Logger.getLogger(Converter.class.getName());
@@ -33,8 +35,8 @@ public class Converter {
         log.info("Output file: " + output.toAbsolutePath().toString());
         
         List<String> oldLines = Files.readAllLines(input, CHARSET);
-        List<Block> blocks = parser.parse(oldLines);
-        List<String> newLines = renderder.render(blocks);
+        Document doc = parser.parse(oldLines);
+        List<String> newLines = renderder.render(doc);
         Files.write(output, newLines, CHARSET);
     }
     
